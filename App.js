@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const emojiDictionary = {
-  "😉": "Winking Face",
-  "😊": "Smiling Face with Smiling Eyes",
-  "🔥": "Fire",
-  "✔️": "Check Mark",
-  "👍": "Thumbs Up",
-  "🥺": "Pleading Face"
+  "🍲": "Pot of Food",
+  "🥫": "Canned Food",
+  "🥘": "Shallow Pan of Food",
+  "🍛": "Curry Rice",
+  "🧆": "Falafel",
+  "🥙": "Stuffed Flatbread",
+  "🍞": "Bread",
+  "🧈": "Butter",
+  "🍨": "Ice Cream",
+  "🍟": "French Fries",
+  "🍪": "Cookie"
 };
 
 var emojiList = Object.keys(emojiDictionary);
