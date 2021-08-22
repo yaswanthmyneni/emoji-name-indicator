@@ -12,7 +12,7 @@ const emojiDictionary = {
   "🧈": "Butter",
   "🍨": "Ice Cream",
   "🍟": "French Fries",
-  "🍪": "Cookie"
+  "🍪": "Cookie",
 };
 
 var emojiList = Object.keys(emojiDictionary);
@@ -37,25 +37,35 @@ export default function App() {
   }
 
   return (
-    <div className="App">
-      <h1> {headingText} </h1>
+    <div
+      className="App"
+      style={{
+        backgroundColor: "aqua",
+        padding: "1.5rem 0rem",
+        width: "70%",
+        margin: "auto",
+      }}
+    >
+      <h1 style={{ color: "green", fontSize: "2.7rem" }}> {headingText} </h1>
       <input
         onChange={emojiInputHandler}
         style={{
-          width: "50%"
+          width: "30%",
         }}
       ></input>
-      <h2> {meaning} </h2>
+      <h2 style={{ color: "red" }}> {meaning} </h2>
 
-      <h3> Emojis We Know </h3>
+      <h3 style={{ color: "green" }}> Emojis We Know are </h3>
       {emojiList.map(function (emoji) {
         return (
           <span
             onClick={() => emojiClickHandler(emoji)}
             style={{
               fontSize: "2.3rem",
-              padding: "10px",
-              cursor: "pointer"
+              margin: "1rem",
+              cursor: "pointer",
+              border: "1px solid green",
+              borderRadius: "0.2rem",
             }}
             key={emoji}
           >
